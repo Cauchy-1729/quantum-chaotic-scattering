@@ -1,0 +1,1307 @@
+Calculating level statistics for 24 energy points...
+Processing energy 1/24: E = 1.250
+Building K matrix for E = 1.250
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.918200
+  Processing incident channel j = -10
+    Total probability: 0.787867
+  Processing incident channel j = -9
+    Total probability: 0.902478
+  Processing incident channel j = -8
+    Total probability: 0.970347
+  Processing incident channel j = -7
+    Total probability: 1.072614
+  Processing incident channel j = -6
+    Total probability: 1.066347
+  Processing incident channel j = -5
+    Total probability: 1.168457
+  Processing incident channel j = -4
+    Total probability: 1.131899
+  Processing incident channel j = -3
+    Total probability: 1.203357
+  Processing incident channel j = -2
+    Total probability: 1.147010
+  Processing incident channel j = -1
+    Total probability: 1.180722
+  Processing incident channel j = 0
+    Total probability: 1.190252
+  Processing incident channel j = 1
+    Total probability: 1.180722
+  Processing incident channel j = 2
+    Total probability: 1.147010
+  Processing incident channel j = 3
+    Total probability: 1.203357
+  Processing incident channel j = 4
+    Total probability: 1.131899
+  Processing incident channel j = 5
+    Total probability: 1.168457
+  Processing incident channel j = 6
+    Total probability: 1.066347
+  Processing incident channel j = 7
+    Total probability: 1.072614
+  Processing incident channel j = 8
+    Total probability: 0.970347
+  Processing incident channel j = 9
+    Total probability: 0.902478
+  Processing incident channel j = 10
+    Total probability: 0.787867
+  Processing incident channel j = 11
+    Total probability: 0.918200
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 2/24: E = 1.269
+Building K matrix for E = 1.269
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.823884
+  Processing incident channel j = -10
+    Total probability: 0.787165
+  Processing incident channel j = -9
+    Total probability: 0.940250
+  Processing incident channel j = -8
+    Total probability: 1.001743
+  Processing incident channel j = -7
+    Total probability: 1.093595
+  Processing incident channel j = -6
+    Total probability: 1.099367
+  Processing incident channel j = -5
+    Total probability: 1.201563
+  Processing incident channel j = -4
+    Total probability: 1.173600
+  Processing incident channel j = -3
+    Total probability: 1.254232
+  Processing incident channel j = -2
+    Total probability: 1.194026
+  Processing incident channel j = -1
+    Total probability: 1.183627
+  Processing incident channel j = 0
+    Total probability: 1.170739
+  Processing incident channel j = 1
+    Total probability: 1.183627
+  Processing incident channel j = 2
+    Total probability: 1.194026
+  Processing incident channel j = 3
+    Total probability: 1.254232
+  Processing incident channel j = 4
+    Total probability: 1.173600
+  Processing incident channel j = 5
+    Total probability: 1.201563
+  Processing incident channel j = 6
+    Total probability: 1.099367
+  Processing incident channel j = 7
+    Total probability: 1.093595
+  Processing incident channel j = 8
+    Total probability: 1.001743
+  Processing incident channel j = 9
+    Total probability: 0.940250
+  Processing incident channel j = 10
+    Total probability: 0.787165
+  Processing incident channel j = 11
+    Total probability: 0.823884
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 3/24: E = 1.287
+Building K matrix for E = 1.287
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.593561
+  Processing incident channel j = -10
+    Total probability: 0.828453
+  Processing incident channel j = -9
+    Total probability: 0.974615
+  Processing incident channel j = -8
+    Total probability: 1.079196
+  Processing incident channel j = -7
+    Total probability: 1.083252
+  Processing incident channel j = -6
+    Total probability: 1.133240
+  Processing incident channel j = -5
+    Total probability: 1.312981
+  Processing incident channel j = -4
+    Total probability: 1.276466
+  Processing incident channel j = -3
+    Total probability: 1.321118
+  Processing incident channel j = -2
+    Total probability: 1.332161
+  Processing incident channel j = -1
+    Total probability: 1.267514
+  Processing incident channel j = 0
+    Total probability: 1.209901
+  Processing incident channel j = 1
+    Total probability: 1.267514
+  Processing incident channel j = 2
+    Total probability: 1.332161
+  Processing incident channel j = 3
+    Total probability: 1.321118
+  Processing incident channel j = 4
+    Total probability: 1.276466
+  Processing incident channel j = 5
+    Total probability: 1.312981
+  Processing incident channel j = 6
+    Total probability: 1.133240
+  Processing incident channel j = 7
+    Total probability: 1.083252
+  Processing incident channel j = 8
+    Total probability: 1.079196
+  Processing incident channel j = 9
+    Total probability: 0.974615
+  Processing incident channel j = 10
+    Total probability: 0.828453
+  Processing incident channel j = 11
+    Total probability: 0.593561
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 4/24: E = 1.306
+Building K matrix for E = 1.306
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.697624
+  Processing incident channel j = -10
+    Total probability: 0.799750
+  Processing incident channel j = -9
+    Total probability: 0.968582
+  Processing incident channel j = -8
+    Total probability: 0.986238
+  Processing incident channel j = -7
+    Total probability: 1.041579
+  Processing incident channel j = -6
+    Total probability: 1.058429
+  Processing incident channel j = -5
+    Total probability: 1.140757
+  Processing incident channel j = -4
+    Total probability: 1.207209
+  Processing incident channel j = -3
+    Total probability: 1.320369
+  Processing incident channel j = -2
+    Total probability: 1.339060
+  Processing incident channel j = -1
+    Total probability: 1.296693
+  Processing incident channel j = 0
+    Total probability: 1.251010
+  Processing incident channel j = 1
+    Total probability: 1.296693
+  Processing incident channel j = 2
+    Total probability: 1.339060
+  Processing incident channel j = 3
+    Total probability: 1.320369
+  Processing incident channel j = 4
+    Total probability: 1.207209
+  Processing incident channel j = 5
+    Total probability: 1.140757
+  Processing incident channel j = 6
+    Total probability: 1.058429
+  Processing incident channel j = 7
+    Total probability: 1.041579
+  Processing incident channel j = 8
+    Total probability: 0.986238
+  Processing incident channel j = 9
+    Total probability: 0.968582
+  Processing incident channel j = 10
+    Total probability: 0.799750
+  Processing incident channel j = 11
+    Total probability: 0.697624
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 5/24: E = 1.325
+Building K matrix for E = 1.325
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.725047
+  Processing incident channel j = -10
+    Total probability: 0.829522
+  Processing incident channel j = -9
+    Total probability: 0.979681
+  Processing incident channel j = -8
+    Total probability: 0.996112
+  Processing incident channel j = -7
+    Total probability: 1.041550
+  Processing incident channel j = -6
+    Total probability: 1.035986
+  Processing incident channel j = -5
+    Total probability: 1.127365
+  Processing incident channel j = -4
+    Total probability: 1.185698
+  Processing incident channel j = -3
+    Total probability: 1.235865
+  Processing incident channel j = -2
+    Total probability: 1.312067
+  Processing incident channel j = -1
+    Total probability: 1.233623
+  Processing incident channel j = 0
+    Total probability: 1.173487
+  Processing incident channel j = 1
+    Total probability: 1.233623
+  Processing incident channel j = 2
+    Total probability: 1.312067
+  Processing incident channel j = 3
+    Total probability: 1.235865
+  Processing incident channel j = 4
+    Total probability: 1.185698
+  Processing incident channel j = 5
+    Total probability: 1.127365
+  Processing incident channel j = 6
+    Total probability: 1.035986
+  Processing incident channel j = 7
+    Total probability: 1.041550
+  Processing incident channel j = 8
+    Total probability: 0.996112
+  Processing incident channel j = 9
+    Total probability: 0.979681
+  Processing incident channel j = 10
+    Total probability: 0.829522
+  Processing incident channel j = 11
+    Total probability: 0.725047
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 6/24: E = 1.343
+Building K matrix for E = 1.343
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.749115
+  Processing incident channel j = -10
+    Total probability: 0.875464
+  Processing incident channel j = -9
+    Total probability: 1.013006
+  Processing incident channel j = -8
+    Total probability: 1.013798
+  Processing incident channel j = -7
+    Total probability: 1.061816
+  Processing incident channel j = -6
+    Total probability: 1.037894
+  Processing incident channel j = -5
+    Total probability: 1.125262
+  Processing incident channel j = -4
+    Total probability: 1.134051
+  Processing incident channel j = -3
+    Total probability: 1.141905
+  Processing incident channel j = -2
+    Total probability: 1.219621
+  Processing incident channel j = -1
+    Total probability: 1.168560
+  Processing incident channel j = 0
+    Total probability: 1.119911
+  Processing incident channel j = 1
+    Total probability: 1.168560
+  Processing incident channel j = 2
+    Total probability: 1.219621
+  Processing incident channel j = 3
+    Total probability: 1.141905
+  Processing incident channel j = 4
+    Total probability: 1.134051
+  Processing incident channel j = 5
+    Total probability: 1.125262
+  Processing incident channel j = 6
+    Total probability: 1.037894
+  Processing incident channel j = 7
+    Total probability: 1.061816
+  Processing incident channel j = 8
+    Total probability: 1.013798
+  Processing incident channel j = 9
+    Total probability: 1.013006
+  Processing incident channel j = 10
+    Total probability: 0.875464
+  Processing incident channel j = 11
+    Total probability: 0.749115
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 7/24: E = 1.362
+Building K matrix for E = 1.362
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.785904
+  Processing incident channel j = -10
+    Total probability: 0.857737
+  Processing incident channel j = -9
+    Total probability: 1.010025
+  Processing incident channel j = -8
+    Total probability: 1.026752
+  Processing incident channel j = -7
+    Total probability: 1.084461
+  Processing incident channel j = -6
+    Total probability: 1.061483
+  Processing incident channel j = -5
+    Total probability: 1.097666
+  Processing incident channel j = -4
+    Total probability: 1.119929
+  Processing incident channel j = -3
+    Total probability: 1.118012
+  Processing incident channel j = -2
+    Total probability: 1.142640
+  Processing incident channel j = -1
+    Total probability: 1.117079
+  Processing incident channel j = 0
+    Total probability: 1.133154
+  Processing incident channel j = 1
+    Total probability: 1.117079
+  Processing incident channel j = 2
+    Total probability: 1.142640
+  Processing incident channel j = 3
+    Total probability: 1.118012
+  Processing incident channel j = 4
+    Total probability: 1.119929
+  Processing incident channel j = 5
+    Total probability: 1.097666
+  Processing incident channel j = 6
+    Total probability: 1.061483
+  Processing incident channel j = 7
+    Total probability: 1.084461
+  Processing incident channel j = 8
+    Total probability: 1.026752
+  Processing incident channel j = 9
+    Total probability: 1.010025
+  Processing incident channel j = 10
+    Total probability: 0.857737
+  Processing incident channel j = 11
+    Total probability: 0.785904
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 8/24: E = 1.381
+Building K matrix for E = 1.381
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.760060
+  Processing incident channel j = -10
+    Total probability: 0.835630
+  Processing incident channel j = -9
+    Total probability: 1.000000
+  Processing incident channel j = -8
+    Total probability: 1.040972
+  Processing incident channel j = -7
+    Total probability: 1.103183
+  Processing incident channel j = -6
+    Total probability: 1.089083
+  Processing incident channel j = -5
+    Total probability: 1.090173
+  Processing incident channel j = -4
+    Total probability: 1.130608
+  Processing incident channel j = -3
+    Total probability: 1.140010
+  Processing incident channel j = -2
+    Total probability: 1.117127
+  Processing incident channel j = -1
+    Total probability: 1.124272
+  Processing incident channel j = 0
+    Total probability: 1.160257
+  Processing incident channel j = 1
+    Total probability: 1.124272
+  Processing incident channel j = 2
+    Total probability: 1.117127
+  Processing incident channel j = 3
+    Total probability: 1.140010
+  Processing incident channel j = 4
+    Total probability: 1.130608
+  Processing incident channel j = 5
+    Total probability: 1.090173
+  Processing incident channel j = 6
+    Total probability: 1.089083
+  Processing incident channel j = 7
+    Total probability: 1.103183
+  Processing incident channel j = 8
+    Total probability: 1.040972
+  Processing incident channel j = 9
+    Total probability: 1.000000
+  Processing incident channel j = 10
+    Total probability: 0.835630
+  Processing incident channel j = 11
+    Total probability: 0.760060
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 9/24: E = 1.400
+Building K matrix for E = 1.400
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 0.698034
+  Processing incident channel j = -10
+    Total probability: 0.807451
+  Processing incident channel j = -9
+    Total probability: 1.003805
+  Processing incident channel j = -8
+    Total probability: 1.063860
+  Processing incident channel j = -7
+    Total probability: 1.124641
+  Processing incident channel j = -6
+    Total probability: 1.097253
+  Processing incident channel j = -5
+    Total probability: 1.096903
+  Processing incident channel j = -4
+    Total probability: 1.136065
+  Processing incident channel j = -3
+    Total probability: 1.192808
+  Processing incident channel j = -2
+    Total probability: 1.114507
+  Processing incident channel j = -1
+    Total probability: 1.165342
+  Processing incident channel j = 0
+    Total probability: 1.175833
+  Processing incident channel j = 1
+    Total probability: 1.165342
+  Processing incident channel j = 2
+    Total probability: 1.114507
+  Processing incident channel j = 3
+    Total probability: 1.192808
+  Processing incident channel j = 4
+    Total probability: 1.136065
+  Processing incident channel j = 5
+    Total probability: 1.096903
+  Processing incident channel j = 6
+    Total probability: 1.097253
+  Processing incident channel j = 7
+    Total probability: 1.124641
+  Processing incident channel j = 8
+    Total probability: 1.063860
+  Processing incident channel j = 9
+    Total probability: 1.003805
+  Processing incident channel j = 10
+    Total probability: 0.807451
+  Processing incident channel j = 11
+    Total probability: 0.698034
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 10/24: E = 1.418
+Building K matrix for E = 1.418
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 77.073577
+  Processing incident channel j = -10
+    Total probability: 14.518990
+  Processing incident channel j = -9
+    Total probability: 69.602129
+  Processing incident channel j = -8
+    Total probability: 8.113606
+  Processing incident channel j = -7
+    Total probability: 30.762635
+  Processing incident channel j = -6
+    Total probability: 22.606907
+  Processing incident channel j = -5
+    Total probability: 19.571344
+  Processing incident channel j = -4
+    Total probability: 21.734224
+  Processing incident channel j = -3
+    Total probability: 18.323960
+  Processing incident channel j = -2
+    Total probability: 12.607911
+  Processing incident channel j = -1
+    Total probability: 25.892543
+  Processing incident channel j = 0
+    Total probability: 18.881922
+  Processing incident channel j = 1
+    Total probability: 25.892543
+  Processing incident channel j = 2
+    Total probability: 12.607911
+  Processing incident channel j = 3
+    Total probability: 18.323960
+  Processing incident channel j = 4
+    Total probability: 21.734224
+  Processing incident channel j = 5
+    Total probability: 19.571344
+  Processing incident channel j = 6
+    Total probability: 22.606907
+  Processing incident channel j = 7
+    Total probability: 30.762635
+  Processing incident channel j = 8
+    Total probability: 8.113606
+  Processing incident channel j = 9
+    Total probability: 69.602129
+  Processing incident channel j = 10
+    Total probability: 14.518990
+  Processing incident channel j = 11
+    Total probability: 77.073577
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 11/24: E = 1.437
+Building K matrix for E = 1.437
+  Open incident channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  Processing incident channel j = -11
+    Total probability: 6.573450
+  Processing incident channel j = -10
+    Total probability: 1.652347
+  Processing incident channel j = -9
+    Total probability: 5.449041
+  Processing incident channel j = -8
+    Total probability: 1.944205
+  Processing incident channel j = -7
+    Total probability: 2.695991
+  Processing incident channel j = -6
+    Total probability: 2.840677
+  Processing incident channel j = -5
+    Total probability: 2.695679
+  Processing incident channel j = -4
+    Total probability: 2.462897
+  Processing incident channel j = -3
+    Total probability: 2.324708
+  Processing incident channel j = -2
+    Total probability: 1.674807
+  Processing incident channel j = -1
+    Total probability: 2.904737
+  Processing incident channel j = 0
+    Total probability: 2.088583
+  Processing incident channel j = 1
+    Total probability: 2.904737
+  Processing incident channel j = 2
+    Total probability: 1.674807
+  Processing incident channel j = 3
+    Total probability: 2.324708
+  Processing incident channel j = 4
+    Total probability: 2.462897
+  Processing incident channel j = 5
+    Total probability: 2.695679
+  Processing incident channel j = 6
+    Total probability: 2.840677
+  Processing incident channel j = 7
+    Total probability: 2.695991
+  Processing incident channel j = 8
+    Total probability: 1.944205
+  Processing incident channel j = 9
+    Total probability: 5.449041
+  Processing incident channel j = 10
+    Total probability: 1.652347
+  Processing incident channel j = 11
+    Total probability: 6.573450
+Open channels: [-11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Number of open channels: 23
+  Successfully processed: 46 eigenphases
+Processing energy 12/24: E = 1.456
+Building K matrix for E = 1.456
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.681414
+  Processing incident channel j = -11
+    Total probability: 1.195065
+  Processing incident channel j = -10
+    Total probability: 0.935545
+  Processing incident channel j = -9
+    Total probability: 1.335078
+  Processing incident channel j = -8
+    Total probability: 1.200590
+  Processing incident channel j = -7
+    Total probability: 1.187380
+  Processing incident channel j = -6
+    Total probability: 1.255564
+  Processing incident channel j = -5
+    Total probability: 1.284266
+  Processing incident channel j = -4
+    Total probability: 1.221073
+  Processing incident channel j = -3
+    Total probability: 1.282798
+  Processing incident channel j = -2
+    Total probability: 1.143860
+  Processing incident channel j = -1
+    Total probability: 1.366253
+  Processing incident channel j = 0
+    Total probability: 1.129867
+  Processing incident channel j = 1
+    Total probability: 1.366253
+  Processing incident channel j = 2
+    Total probability: 1.143860
+  Processing incident channel j = 3
+    Total probability: 1.282798
+  Processing incident channel j = 4
+    Total probability: 1.221073
+  Processing incident channel j = 5
+    Total probability: 1.284266
+  Processing incident channel j = 6
+    Total probability: 1.255564
+  Processing incident channel j = 7
+    Total probability: 1.187380
+  Processing incident channel j = 8
+    Total probability: 1.200590
+  Processing incident channel j = 9
+    Total probability: 1.335078
+  Processing incident channel j = 10
+    Total probability: 0.935545
+  Processing incident channel j = 11
+    Total probability: 1.195065
+  Processing incident channel j = 12
+    Total probability: 0.681414
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 13/24: E = 1.474
+Building K matrix for E = 1.474
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.711721
+  Processing incident channel j = -11
+    Total probability: 1.071776
+  Processing incident channel j = -10
+    Total probability: 0.952073
+  Processing incident channel j = -9
+    Total probability: 1.158100
+  Processing incident channel j = -8
+    Total probability: 1.137566
+  Processing incident channel j = -7
+    Total probability: 1.083601
+  Processing incident channel j = -6
+    Total probability: 1.168750
+  Processing incident channel j = -5
+    Total probability: 1.210975
+  Processing incident channel j = -4
+    Total probability: 1.148980
+  Processing incident channel j = -3
+    Total probability: 1.209284
+  Processing incident channel j = -2
+    Total probability: 1.145710
+  Processing incident channel j = -1
+    Total probability: 1.289878
+  Processing incident channel j = 0
+    Total probability: 1.090004
+  Processing incident channel j = 1
+    Total probability: 1.289878
+  Processing incident channel j = 2
+    Total probability: 1.145710
+  Processing incident channel j = 3
+    Total probability: 1.209284
+  Processing incident channel j = 4
+    Total probability: 1.148980
+  Processing incident channel j = 5
+    Total probability: 1.210975
+  Processing incident channel j = 6
+    Total probability: 1.168750
+  Processing incident channel j = 7
+    Total probability: 1.083601
+  Processing incident channel j = 8
+    Total probability: 1.137566
+  Processing incident channel j = 9
+    Total probability: 1.158100
+  Processing incident channel j = 10
+    Total probability: 0.952073
+  Processing incident channel j = 11
+    Total probability: 1.071776
+  Processing incident channel j = 12
+    Total probability: 0.711721
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 14/24: E = 1.493
+Building K matrix for E = 1.493
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.769171
+  Processing incident channel j = -11
+    Total probability: 1.003463
+  Processing incident channel j = -10
+    Total probability: 0.948659
+  Processing incident channel j = -9
+    Total probability: 1.088316
+  Processing incident channel j = -8
+    Total probability: 1.100979
+  Processing incident channel j = -7
+    Total probability: 1.057237
+  Processing incident channel j = -6
+    Total probability: 1.090478
+  Processing incident channel j = -5
+    Total probability: 1.120347
+  Processing incident channel j = -4
+    Total probability: 1.109359
+  Processing incident channel j = -3
+    Total probability: 1.170203
+  Processing incident channel j = -2
+    Total probability: 1.155711
+  Processing incident channel j = -1
+    Total probability: 1.227175
+  Processing incident channel j = 0
+    Total probability: 1.118377
+  Processing incident channel j = 1
+    Total probability: 1.227175
+  Processing incident channel j = 2
+    Total probability: 1.155711
+  Processing incident channel j = 3
+    Total probability: 1.170203
+  Processing incident channel j = 4
+    Total probability: 1.109359
+  Processing incident channel j = 5
+    Total probability: 1.120347
+  Processing incident channel j = 6
+    Total probability: 1.090478
+  Processing incident channel j = 7
+    Total probability: 1.057237
+  Processing incident channel j = 8
+    Total probability: 1.100979
+  Processing incident channel j = 9
+    Total probability: 1.088316
+  Processing incident channel j = 10
+    Total probability: 0.948659
+  Processing incident channel j = 11
+    Total probability: 1.003463
+  Processing incident channel j = 12
+    Total probability: 0.769171
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 15/24: E = 1.512
+Building K matrix for E = 1.512
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.823660
+  Processing incident channel j = -11
+    Total probability: 0.950313
+  Processing incident channel j = -10
+    Total probability: 0.931284
+  Processing incident channel j = -9
+    Total probability: 1.030920
+  Processing incident channel j = -8
+    Total probability: 1.079204
+  Processing incident channel j = -7
+    Total probability: 1.063084
+  Processing incident channel j = -6
+    Total probability: 1.074567
+  Processing incident channel j = -5
+    Total probability: 1.075149
+  Processing incident channel j = -4
+    Total probability: 1.092689
+  Processing incident channel j = -3
+    Total probability: 1.151258
+  Processing incident channel j = -2
+    Total probability: 1.156066
+  Processing incident channel j = -1
+    Total probability: 1.160077
+  Processing incident channel j = 0
+    Total probability: 1.143863
+  Processing incident channel j = 1
+    Total probability: 1.160077
+  Processing incident channel j = 2
+    Total probability: 1.156066
+  Processing incident channel j = 3
+    Total probability: 1.151258
+  Processing incident channel j = 4
+    Total probability: 1.092689
+  Processing incident channel j = 5
+    Total probability: 1.075149
+  Processing incident channel j = 6
+    Total probability: 1.074567
+  Processing incident channel j = 7
+    Total probability: 1.063084
+  Processing incident channel j = 8
+    Total probability: 1.079204
+  Processing incident channel j = 9
+    Total probability: 1.030920
+  Processing incident channel j = 10
+    Total probability: 0.931284
+  Processing incident channel j = 11
+    Total probability: 0.950313
+  Processing incident channel j = 12
+    Total probability: 0.823660
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 16/24: E = 1.530
+Building K matrix for E = 1.530
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.830094
+  Processing incident channel j = -11
+    Total probability: 0.869968
+  Processing incident channel j = -10
+    Total probability: 0.917278
+  Processing incident channel j = -9
+    Total probability: 0.967695
+  Processing incident channel j = -8
+    Total probability: 1.027627
+  Processing incident channel j = -7
+    Total probability: 1.065294
+  Processing incident channel j = -6
+    Total probability: 1.096135
+  Processing incident channel j = -5
+    Total probability: 1.087900
+  Processing incident channel j = -4
+    Total probability: 1.120900
+  Processing incident channel j = -3
+    Total probability: 1.173595
+  Processing incident channel j = -2
+    Total probability: 1.236392
+  Processing incident channel j = -1
+    Total probability: 1.199569
+  Processing incident channel j = 0
+    Total probability: 1.205637
+  Processing incident channel j = 1
+    Total probability: 1.199569
+  Processing incident channel j = 2
+    Total probability: 1.236392
+  Processing incident channel j = 3
+    Total probability: 1.173595
+  Processing incident channel j = 4
+    Total probability: 1.120900
+  Processing incident channel j = 5
+    Total probability: 1.087900
+  Processing incident channel j = 6
+    Total probability: 1.096135
+  Processing incident channel j = 7
+    Total probability: 1.065294
+  Processing incident channel j = 8
+    Total probability: 1.027627
+  Processing incident channel j = 9
+    Total probability: 0.967695
+  Processing incident channel j = 10
+    Total probability: 0.917278
+  Processing incident channel j = 11
+    Total probability: 0.869968
+  Processing incident channel j = 12
+    Total probability: 0.830094
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 17/24: E = 1.549
+Building K matrix for E = 1.549
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.714631
+  Processing incident channel j = -11
+    Total probability: 0.798949
+  Processing incident channel j = -10
+    Total probability: 0.944859
+  Processing incident channel j = -9
+    Total probability: 0.970393
+  Processing incident channel j = -8
+    Total probability: 1.011239
+  Processing incident channel j = -7
+    Total probability: 1.071745
+  Processing incident channel j = -6
+    Total probability: 1.112887
+  Processing incident channel j = -5
+    Total probability: 1.106034
+  Processing incident channel j = -4
+    Total probability: 1.170560
+  Processing incident channel j = -3
+    Total probability: 1.245096
+  Processing incident channel j = -2
+    Total probability: 1.321740
+  Processing incident channel j = -1
+    Total probability: 1.357686
+  Processing incident channel j = 0
+    Total probability: 1.353597
+  Processing incident channel j = 1
+    Total probability: 1.357686
+  Processing incident channel j = 2
+    Total probability: 1.321740
+  Processing incident channel j = 3
+    Total probability: 1.245096
+  Processing incident channel j = 4
+    Total probability: 1.170560
+  Processing incident channel j = 5
+    Total probability: 1.106034
+  Processing incident channel j = 6
+    Total probability: 1.112887
+  Processing incident channel j = 7
+    Total probability: 1.071745
+  Processing incident channel j = 8
+    Total probability: 1.011239
+  Processing incident channel j = 9
+    Total probability: 0.970393
+  Processing incident channel j = 10
+    Total probability: 0.944859
+  Processing incident channel j = 11
+    Total probability: 0.798949
+  Processing incident channel j = 12
+    Total probability: 0.714631
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 18/24: E = 1.568
+Building K matrix for E = 1.568
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.666723
+  Processing incident channel j = -11
+    Total probability: 0.805313
+  Processing incident channel j = -10
+    Total probability: 0.943443
+  Processing incident channel j = -9
+    Total probability: 1.025528
+  Processing incident channel j = -8
+    Total probability: 1.021676
+  Processing incident channel j = -7
+    Total probability: 1.070458
+  Processing incident channel j = -6
+    Total probability: 1.129101
+  Processing incident channel j = -5
+    Total probability: 1.131441
+  Processing incident channel j = -4
+    Total probability: 1.182934
+  Processing incident channel j = -3
+    Total probability: 1.250429
+  Processing incident channel j = -2
+    Total probability: 1.282141
+  Processing incident channel j = -1
+    Total probability: 1.334380
+  Processing incident channel j = 0
+    Total probability: 1.312232
+  Processing incident channel j = 1
+    Total probability: 1.334380
+  Processing incident channel j = 2
+    Total probability: 1.282141
+  Processing incident channel j = 3
+    Total probability: 1.250429
+  Processing incident channel j = 4
+    Total probability: 1.182934
+  Processing incident channel j = 5
+    Total probability: 1.131441
+  Processing incident channel j = 6
+    Total probability: 1.129101
+  Processing incident channel j = 7
+    Total probability: 1.070458
+  Processing incident channel j = 8
+    Total probability: 1.021676
+  Processing incident channel j = 9
+    Total probability: 1.025528
+  Processing incident channel j = 10
+    Total probability: 0.943443
+  Processing incident channel j = 11
+    Total probability: 0.805313
+  Processing incident channel j = 12
+    Total probability: 0.666723
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 19/24: E = 1.587
+Building K matrix for E = 1.587
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.635079
+  Processing incident channel j = -11
+    Total probability: 0.870971
+  Processing incident channel j = -10
+    Total probability: 0.947502
+  Processing incident channel j = -9
+    Total probability: 1.018985
+  Processing incident channel j = -8
+    Total probability: 1.029095
+  Processing incident channel j = -7
+    Total probability: 1.099163
+  Processing incident channel j = -6
+    Total probability: 1.110509
+  Processing incident channel j = -5
+    Total probability: 1.153045
+  Processing incident channel j = -4
+    Total probability: 1.163274
+  Processing incident channel j = -3
+    Total probability: 1.219311
+  Processing incident channel j = -2
+    Total probability: 1.261397
+  Processing incident channel j = -1
+    Total probability: 1.286328
+  Processing incident channel j = 0
+    Total probability: 1.251002
+  Processing incident channel j = 1
+    Total probability: 1.286328
+  Processing incident channel j = 2
+    Total probability: 1.261397
+  Processing incident channel j = 3
+    Total probability: 1.219311
+  Processing incident channel j = 4
+    Total probability: 1.163274
+  Processing incident channel j = 5
+    Total probability: 1.153045
+  Processing incident channel j = 6
+    Total probability: 1.110509
+  Processing incident channel j = 7
+    Total probability: 1.099163
+  Processing incident channel j = 8
+    Total probability: 1.029095
+  Processing incident channel j = 9
+    Total probability: 1.018985
+  Processing incident channel j = 10
+    Total probability: 0.947502
+  Processing incident channel j = 11
+    Total probability: 0.870971
+  Processing incident channel j = 12
+    Total probability: 0.635079
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 20/24: E = 1.605
+Building K matrix for E = 1.605
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.667689
+  Processing incident channel j = -11
+    Total probability: 0.859541
+  Processing incident channel j = -10
+    Total probability: 0.963436
+  Processing incident channel j = -9
+    Total probability: 0.997803
+  Processing incident channel j = -8
+    Total probability: 0.970609
+  Processing incident channel j = -7
+    Total probability: 1.066277
+  Processing incident channel j = -6
+    Total probability: 1.099496
+  Processing incident channel j = -5
+    Total probability: 1.109537
+  Processing incident channel j = -4
+    Total probability: 1.178569
+  Processing incident channel j = -3
+    Total probability: 1.177661
+  Processing incident channel j = -2
+    Total probability: 1.249041
+  Processing incident channel j = -1
+    Total probability: 1.327933
+  Processing incident channel j = 0
+    Total probability: 1.311103
+  Processing incident channel j = 1
+    Total probability: 1.327933
+  Processing incident channel j = 2
+    Total probability: 1.249041
+  Processing incident channel j = 3
+    Total probability: 1.177661
+  Processing incident channel j = 4
+    Total probability: 1.178569
+  Processing incident channel j = 5
+    Total probability: 1.109537
+  Processing incident channel j = 6
+    Total probability: 1.099496
+  Processing incident channel j = 7
+    Total probability: 1.066277
+  Processing incident channel j = 8
+    Total probability: 0.970609
+  Processing incident channel j = 9
+    Total probability: 0.997803
+  Processing incident channel j = 10
+    Total probability: 0.963436
+  Processing incident channel j = 11
+    Total probability: 0.859541
+  Processing incident channel j = 12
+    Total probability: 0.667689
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 21/24: E = 1.624
+Building K matrix for E = 1.624
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.683721
+  Processing incident channel j = -11
+    Total probability: 0.880825
+  Processing incident channel j = -10
+    Total probability: 0.975235
+  Processing incident channel j = -9
+    Total probability: 0.976911
+  Processing incident channel j = -8
+    Total probability: 0.973761
+  Processing incident channel j = -7
+    Total probability: 1.055867
+  Processing incident channel j = -6
+    Total probability: 1.075480
+  Processing incident channel j = -5
+    Total probability: 1.111739
+  Processing incident channel j = -4
+    Total probability: 1.158055
+  Processing incident channel j = -3
+    Total probability: 1.190320
+  Processing incident channel j = -2
+    Total probability: 1.205678
+  Processing incident channel j = -1
+    Total probability: 1.299409
+  Processing incident channel j = 0
+    Total probability: 1.274748
+  Processing incident channel j = 1
+    Total probability: 1.299409
+  Processing incident channel j = 2
+    Total probability: 1.205678
+  Processing incident channel j = 3
+    Total probability: 1.190320
+  Processing incident channel j = 4
+    Total probability: 1.158055
+  Processing incident channel j = 5
+    Total probability: 1.111739
+  Processing incident channel j = 6
+    Total probability: 1.075480
+  Processing incident channel j = 7
+    Total probability: 1.055867
+  Processing incident channel j = 8
+    Total probability: 0.973761
+  Processing incident channel j = 9
+    Total probability: 0.976911
+  Processing incident channel j = 10
+    Total probability: 0.975235
+  Processing incident channel j = 11
+    Total probability: 0.880825
+  Processing incident channel j = 12
+    Total probability: 0.683721
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 22/24: E = 1.643
+Building K matrix for E = 1.643
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.713467
+  Processing incident channel j = -11
+    Total probability: 0.903738
+  Processing incident channel j = -10
+    Total probability: 0.979022
+  Processing incident channel j = -9
+    Total probability: 0.958825
+  Processing incident channel j = -8
+    Total probability: 0.987880
+  Processing incident channel j = -7
+    Total probability: 1.044754
+  Processing incident channel j = -6
+    Total probability: 1.063817
+  Processing incident channel j = -5
+    Total probability: 1.104720
+  Processing incident channel j = -4
+    Total probability: 1.135898
+  Processing incident channel j = -3
+    Total probability: 1.178481
+  Processing incident channel j = -2
+    Total probability: 1.164109
+  Processing incident channel j = -1
+    Total probability: 1.260071
+  Processing incident channel j = 0
+    Total probability: 1.234608
+  Processing incident channel j = 1
+    Total probability: 1.260071
+  Processing incident channel j = 2
+    Total probability: 1.164109
+  Processing incident channel j = 3
+    Total probability: 1.178481
+  Processing incident channel j = 4
+    Total probability: 1.135898
+  Processing incident channel j = 5
+    Total probability: 1.104720
+  Processing incident channel j = 6
+    Total probability: 1.063817
+  Processing incident channel j = 7
+    Total probability: 1.044754
+  Processing incident channel j = 8
+    Total probability: 0.987880
+  Processing incident channel j = 9
+    Total probability: 0.958825
+  Processing incident channel j = 10
+    Total probability: 0.979022
+  Processing incident channel j = 11
+    Total probability: 0.903738
+  Processing incident channel j = 12
+    Total probability: 0.713467
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 23/24: E = 1.661
+Building K matrix for E = 1.661
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.749245
+  Processing incident channel j = -11
+    Total probability: 0.919425
+  Processing incident channel j = -10
+    Total probability: 0.978802
+  Processing incident channel j = -9
+    Total probability: 0.941568
+  Processing incident channel j = -8
+    Total probability: 1.001866
+  Processing incident channel j = -7
+    Total probability: 1.034764
+  Processing incident channel j = -6
+    Total probability: 1.056050
+  Processing incident channel j = -5
+    Total probability: 1.095127
+  Processing incident channel j = -4
+    Total probability: 1.114573
+  Processing incident channel j = -3
+    Total probability: 1.156956
+  Processing incident channel j = -2
+    Total probability: 1.137928
+  Processing incident channel j = -1
+    Total probability: 1.224581
+  Processing incident channel j = 0
+    Total probability: 1.199480
+  Processing incident channel j = 1
+    Total probability: 1.224581
+  Processing incident channel j = 2
+    Total probability: 1.137928
+  Processing incident channel j = 3
+    Total probability: 1.156956
+  Processing incident channel j = 4
+    Total probability: 1.114573
+  Processing incident channel j = 5
+    Total probability: 1.095127
+  Processing incident channel j = 6
+    Total probability: 1.056050
+  Processing incident channel j = 7
+    Total probability: 1.034764
+  Processing incident channel j = 8
+    Total probability: 1.001866
+  Processing incident channel j = 9
+    Total probability: 0.941568
+  Processing incident channel j = 10
+    Total probability: 0.978802
+  Processing incident channel j = 11
+    Total probability: 0.919425
+  Processing incident channel j = 12
+    Total probability: 0.749245
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Processing energy 24/24: E = 1.680
+Building K matrix for E = 1.680
+  Open incident channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  Processing incident channel j = -12
+    Total probability: 0.775824
+  Processing incident channel j = -11
+    Total probability: 0.926276
+  Processing incident channel j = -10
+    Total probability: 0.974941
+  Processing incident channel j = -9
+    Total probability: 0.930940
+  Processing incident channel j = -8
+    Total probability: 1.011186
+  Processing incident channel j = -7
+    Total probability: 1.030369
+  Processing incident channel j = -6
+    Total probability: 1.050854
+  Processing incident channel j = -5
+    Total probability: 1.090261
+  Processing incident channel j = -4
+    Total probability: 1.101425
+  Processing incident channel j = -3
+    Total probability: 1.139578
+  Processing incident channel j = -2
+    Total probability: 1.125725
+  Processing incident channel j = -1
+    Total probability: 1.199741
+  Processing incident channel j = 0
+    Total probability: 1.169318
+  Processing incident channel j = 1
+    Total probability: 1.199741
+  Processing incident channel j = 2
+    Total probability: 1.125725
+  Processing incident channel j = 3
+    Total probability: 1.139578
+  Processing incident channel j = 4
+    Total probability: 1.101425
+  Processing incident channel j = 5
+    Total probability: 1.090261
+  Processing incident channel j = 6
+    Total probability: 1.050854
+  Processing incident channel j = 7
+    Total probability: 1.030369
+  Processing incident channel j = 8
+    Total probability: 1.011186
+  Processing incident channel j = 9
+    Total probability: 0.930940
+  Processing incident channel j = 10
+    Total probability: 0.974941
+  Processing incident channel j = 11
+    Total probability: 0.926276
+  Processing incident channel j = 12
+    Total probability: 0.775824
+Open channels: [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Number of open channels: 25
+  Successfully processed: 50 eigenphases
+Successfully calculated S-matrices for 24 energies
+
+Summary:
+Total energies attempted: 24
+Successfully processed: 24
+Valid energies: [1.25, 1.268695652173913, 1.287391304347826, 1.3060869565217392, 1.3247826086956522, 1.3434782608695652, 1.3621739130434782, 1.3808695652173912, 1.3995652173913042, 1.4182608695652172, 1.4369565217391305, 1.4556521739130435, 1.4743478260869565, 1.4930434782608695, 1.5117391304347825, 1.5304347826086957, 1.5491304347826087, 1.5678260869565217, 1.5865217391304347, 1.6052173913043477, 1.623913043478261, 1.6426086956521737, 1.661304347826087, 1.68]

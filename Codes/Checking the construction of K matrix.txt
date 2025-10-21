@@ -1,0 +1,90 @@
+import numpy as np
+
+# Physical parameters
+mass = 1.0
+hbar = (1/5)**0.5
+I_0 = 10.0
+E = 2.0
+V0 = 1.0
+xi = 10.0
+
+# Channel indices
+j_max = 1      # Increase for more channels if desired
+j_vals = np.arange(-j_max, j_max+1)
+
+# Compute k_j for each channel
+k_vals = np.zeros(len(j_vals), dtype=complex)
+for idx, j in enumerate(j_vals):
+    val = 2 * mass * (E - ((j ** 2) * (hbar**2) / (2 * I_0)))
+    if val >= 0:
+        k_vals[idx] = np.sqrt(val)
+    else:
+        k_vals[idx] = 1j * np.sqrt(-val)
+
+# Spatial grid
+N = 3
+L = 40.0
+x = np.linspace(-L, L, N)
+dx = x[1] - x[0]
+
+print(x)  
+print(k_vals)
+
+
+
+
+print(K)
+
+
+
+[[  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+  -47.72294988+15.33241237j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]
+ [  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.        -50.12547071j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]
+ [  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+  -47.72294988+15.33241237j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]
+ [  0.         +0.j         -49.6944327  +5.51936219j
+    0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j         -49.6944327  +5.51936219j
+    0.         +0.j        ]
+ [  0.         +0.j           0.        -50.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j           0.        -50.j
+    0.         +0.j        ]
+ [  0.         +0.j         -49.6944327  +5.51936219j
+    0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j         -49.6944327  +5.51936219j
+    0.         +0.j        ]
+ [  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+  -47.72294988+15.33241237j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]
+ [  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.        -50.12547071j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]
+ [  0.         +0.j           0.         +0.j
+    0.         +0.j           0.         +0.j
+  -47.72294988+15.33241237j   0.         +0.j
+    0.         +0.j           0.         +0.j
+    0.         +0.j        ]]
+
+
+Agrees with computation done by hand
+
+
+

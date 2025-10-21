@@ -1,0 +1,4 @@
+Can make the K and A  matrices sparse for speed up later.
+
+
+2.0 to 2.1 many energies. v= 3.0 and plot wigner dyson. convergence, dirac scattering, unitarity.

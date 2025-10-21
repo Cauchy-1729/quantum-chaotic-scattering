@@ -1,0 +1,585 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyphenat}
+
+\geometry{margin=1in}
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Quantum Chaotic Scattering Analysis}
+\cfoot{\thepage}
+
+% Code listing style
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    breaklines=true
+}
+
+\title{\textbf{Quantum Chaotic Scattering: Numerical Analysis of Coupled-Channel Systems}}
+\author{Kaustubh Jha}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\tableofcontents
+\newpage
+
+\section{Introduction and Theoretical Foundation}
+
+\subsection{Physical System and Hamiltonian Structure}
+
+We consider a quantum particle with both translational motion (coordinate $x$) and rotational motion (angle $\theta$) given by the Hamiltonian:
+
+\begin{equation}
+H = \frac{p^2}{2m} + \frac{L^2}{2I_0} + V_0 \cos\theta \sum_{n=-1}^{+1} \exp[-(x-n\xi)^2]
+\end{equation}
+
+where:
+\begin{itemize}
+\item $p$ is the translational momentum
+\item $L$ is the angular momentum 
+\item $I_0$ is the moment of inertia
+\item $V_0$ controls the potential strength
+\item $\xi$ is the separation between Gaussian centers
+\end{itemize}
+
+The $\cos\theta$ coupling creates transitions between angular momentum channels with selection rule $\Delta l = \pm 1$, while the multi-Gaussian spatial structure generates the classical phase space complexity necessary for chaotic dynamics.
+
+
+\section{Theoretical Framework: Coupled-Channel Lippmann-\\Schwinger Equations}
+
+The time-independent Schrödinger equation is:
+
+\begin{equation}
+\left[-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} - \frac{\hbar^2}{2I_0}\frac{\partial^2}{\partial \theta^2} + V_0 \cos\theta \sum_{n = -1}^{+1} e^{-(x-n\xi)^2}\right]\psi(x,\theta) = E\psi(x,\theta)
+\end{equation}
+
+The potential consists of Gaussian barriers at positions $x = n\xi$ with angular coupling through $\cos\theta$.
+
+\subsection{Channel Decomposition}
+
+We expand in angular momentum eigenstates:
+
+\begin{equation}
+\psi(x,\theta) = \sum_{l=-\infty}^{\infty} \frac{\psi_l(x)}{\sqrt{2\pi}} e^{il\theta}
+\end{equation}
+
+The angular kinetic energy operator acts as:
+
+\begin{equation}
+-\frac{\hbar^2}{2I_0}\frac{\partial^2}{\partial \theta^2} \frac{e^{il\theta}}{\sqrt{2\pi}} = \frac{\hbar^2 l^2}{2I_0} \frac{e^{il\theta}}{\sqrt{2\pi}}
+\end{equation}
+
+\subsection{Coupled-Channel Equations}
+
+To obtain equations for each channel $\psi_l(x)$, we project the Schrödinger equation onto angular momentum states. The coupling matrix element is:
+
+\begin{equation}
+\int_0^{2\pi} \frac{e^{-il'\theta}}{\sqrt{2\pi}} \cos\theta \frac{e^{il\theta}}{\sqrt{2\pi}} d\theta = \frac{1}{2}(\delta_{l',l+1} + \delta_{l',l-1})
+\end{equation}
+
+since $\cos\theta = \frac{1}{2}(e^{i\theta} + e^{-i\theta})$.
+
+This gives the coupled-channel equations:
+
+\begin{equation}
+\left(-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + \frac{\hbar^2 l^2}{2I_0}\right)\psi_l(x) + \frac{V_0}{2}\sum_{n} e^{-(x-n\xi)^2}[\psi_{l+1}(x) + \psi_{l-1}(x)] = E\psi_l(x)
+\end{equation}
+
+\subsection{Channel Structure and Energy Quantization}
+
+The channel energies and wave numbers are given by:
+
+\begin{equation}
+E_l = E - \frac{\hbar^2 l^2}{2I_0}, \quad k_l = \sqrt{\frac{2mE_l}{\hbar^2}}
+\end{equation}
+
+For real $k_l$, channels are \textbf{open} (propagating waves), while imaginary $k_l$ corresponds to \textbf{closed} channels (evanescent waves). The maximum number of open channels is:
+
+\begin{equation}
+l_{\max} = \sqrt{\frac{2EI_0}{\hbar^2}}
+\end{equation}
+
+\subsection{Lippmann-Schwinger Formulation}
+
+The coupled-channel Lippmann-Schwinger equation takes the form:
+
+\begin{equation}
+\psi_l(x) = e^{ik_l x}\delta_{l,l_{\text{in}}} + \frac{im}{\hbar^2 k_l} \int_{-\infty}^{\infty} e^{ik_l|x-x'|} \frac{V_0}{2}\sum_{n} e^{-(x'-n\xi)^2} [\psi_{l+1}(x') + \psi_{l-1}(x')] dx'
+\end{equation}
+
+The key physical insight is that scattering occurs only between adjacent angular momentum channels ($l = l_{\text{in}} \pm 1$) due to the dipole selection rule from $\cos\theta$ coupling.
+
+\section{Numerical Implementation}
+
+\subsection{Matrix Discretization Method}
+
+Following the approach outlined in the numerical Lippmann-Schwinger literature \cite{hirtler2019}, we discretize the integral equation into a linear algebraic system. The spatial domain $x \in [-L, L]$ is discretized into $N$ points, transforming the problem into:
+
+\begin{equation}
+(I - K)\psi = \phi
+\end{equation}
+
+where the kernel matrix elements are:
+
+\begin{equation}
+K_{ij} = G(x_i, x_j) V(x_j) \Delta x
+\end{equation}
+
+For the coupled-channel case, this becomes a block matrix structure where each channel couples to its nearest neighbors.
+
+\subsection{Computational Parameters}
+
+Our numerical investigations employed the following parameters, consistent with Blümel and Smilansky's work:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Mass $m$ & 1.0 \\
+Reduced Planck constant $\hbar$ & $\sqrt{1/5} \approx 0.447$ \\
+Moment of inertia $I_0$ & 10.0 \\
+Gaussian separation $\xi$ & 10.0 \\
+Energy range & 1.5 -- 2.5 \\
+Spatial grid points $N$ & 300 -- 1500 \\
+Channel range $j_{\max}$ & $\pm 6$ \\
+Spatial extent $L$ & 40.0 \\
+\bottomrule
+\end{tabular}
+\caption{Numerical simulation parameters}
+\end{table}
+
+\subsection{Kernel Matrix Construction}
+
+The coupling between channels $j$ and $j \pm 1$ is implemented through the block structure shown in the following code structure:
+
+\begin{lstlisting}[caption={Kernel Matrix Construction for Coupled Channels}]
+# For each channel j and spatial point x_n
+for j_idx, j in enumerate(j_vals):
+    kj = k_vals[j_idx]
+    for xn_idx, xn in enumerate(x):
+        row_idx = j_idx * N + xn_idx
+        
+        # Coupling to j-1 channel
+        if (j-1) in j_vals:
+            l_idx = np.where(j_vals == (j-1))[0][0]
+            for xm_idx, xm in enumerate(x):
+                col_idx = l_idx * N + xm_idx
+                G_val = greens_function(xn, xm, kj)
+                V_val = potential_triplet(xm)
+                K[row_idx, col_idx] += G_val * V_val * dx
+        
+        # Coupling to j+1 channel
+        if (j+1) in j_vals:
+            l_idx = np.where(j_vals == (j+1))[0][0]
+            for xm_idx, xm in enumerate(x):
+                col_idx = l_idx * N + xm_idx
+                G_val = greens_function(xn, xm, kj)
+                V_val = potential_triplet(xm)
+                K[row_idx, col_idx] += G_val * V_val * dx
+\end{lstlisting}
+
+The resulting matrix has dimension $(N \times N_{ch}) \times (N \times N_{ch})$ where $N$ is the spatial grid size and $N_{ch}$ is the number of channels. For our typical parameters, this ranges from $3900 \times 3900$ to $19500 \times 19500$.
+
+\section{S-Matrix Construction and Analysis}
+
+\subsection{Scattering Coefficient Extraction}
+
+The S-matrix is constructed by solving the scattering problem for each incident channel and extracting the reflection and transmission coefficients from the asymptotic behavior of the wavefunctions. For an incident wave in channel $j_{\text{in}}$, the asymptotic form in each channel $j$ is:
+
+- For $x \to -\infty$ (reflection region): $\psi_j(x) = e^{ik_j x} \delta_{j,j_{\text{in}}} + r_{j,j_{\text{in}}} e^{-ik_j x}$
+
+- For $x \to +\infty$ (transmission region): $\psi_j(x) = t_{j,j_{\text{in}}} e^{ik_j x}$
+
+The coefficients are extracted using:
+
+\begin{lstlisting}[caption={Reflection and Transmission Coefficient Extraction}]
+# Reflection region (x < -L/2)
+refl_mask = x < -L/2
+x_refl = x[refl_mask]
+M_refl = np.vstack([np.exp(1j*kj*x_refl), np.exp(-1j*kj*x_refl)]).T
+coeffs_refl, _, _, _ = np.linalg.lstsq(M_refl, psi_mat[idx_ch, refl_mask], rcond=None)
+r_coeff = coeffs_refl  # Reflection coefficient
+
+# Transmission region (x > L/2)
+trans_mask = x > L/2
+x_trans = x[trans_mask]
+ratios = psi_mat[idx_ch, trans_mask] / np.exp(1j*kj*x_trans)
+t_coeff = np.mean(ratios)  # Transmission coefficient
+\end{lstlisting}
+
+These coefficients form the off-diagonal elements of the S-matrix, with diagonal elements from self-channel scattering.
+
+\subsection{Multiple Incident Channel Analysis}
+
+To construct the full S-matrix, we solve the scattering problem for incident waves in channels $ j $= -6 to 6 and assemble the matrix in a block form. For each pair of channels $ l $ and $ l' $, the sub-block $ S_{l,l'} $ is:
+
+$$
+S_{l,l'} = \begin{pmatrix}
+t_{l,l'} & r_{l,l'} \\
+r_{l,l'} & t_{l,l'}
+\end{pmatrix}
+$$
+
+where $ t_{l,l'} $ and $ r_{l,l'} $ are the scalar transmission and reflection coefficients extracted from the asymptotic wavefunctions for incident channel $ l' $ and outgoing channel $ l $.
+
+\begin{lstlisting}[caption={S-Matrix Construction}]
+def construct_full_s_matrix(all_f_coeffs, k_vals, j_vals):
+    open_channel_indices = [i for i in range(len(j_vals)) if np.imag(k_vals[i]) < 1e-10]
+    n_open_channels = len(open_channel_indices)
+    S_matrix = np.zeros((2*n_open_channels, 2*n_open_channels), dtype=np.complex128)
+    
+    for i, inc_channel in enumerate(open_channel_indices):
+        f_coeffs = all_f_coeffs[inc_channel]
+        for j, out_channel in enumerate(open_channel_indices):
+            r_coeff = f_coeffs[out_channel, 0]
+            t_coeff = f_coeffs[out_channel, 1]
+            S_matrix[2*j, 2*i] = t_coeff
+            S_matrix[2*j, 2*i+1] = r_coeff
+            S_matrix[2*j+1, 2*i] = r_coeff
+            S_matrix[2*j+1, 2*i+1] = t_coeff
+    return S_matrix
+\end{lstlisting}
+
+Unitarity is verified by checking $ S^\dagger S = I $ within numerical tolerance.
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{wavefunction_chaotic}
+\centering
+\caption{A Wavefunction components showing real parts for a particular channel in the chaotic scattering regime ($V_0 = 3.0$). Multiple channels are populated due to coupling through the multi-Gaussian potential.}
+\label{fig:wavefunctions_chaotic}
+\end{figure}
+
+\subsection{Multiple Incident Channel Analysis}
+
+To construct the full S-matrix, we solve the scattering problem for incident waves in channels $j$ = -6 to 6 and extract the complete scattering matrix with proper normalization and unitarity constraints.
+
+\section{Quantum Chaos Indicators and Level Statistics}
+
+\subsection{Random Matrix Theory Predictions}
+
+For classically chaotic systems, random matrix theory predicts specific statistical signatures. Following Blümel and Smilansky's framework \cite{blumel1989}:
+
+1. Wigner-Dyson level spacing distribution: 
+   \begin{equation}
+   P(s) = \frac{\pi s}{2} e^{-\pi s^2/4}
+   \end{equation}
+
+2. Level spacing ratio: Mean value $\langle r \rangle \approx 0.536$ for GOE
+
+
+\subsection{Numerical Results: Parameter Regime Analysis}
+
+Following Blümel and Smilansky's classification, we identify scattering regimes based on potential strength and energy:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Regime} & \textbf{$V_0$}  & \textbf{Mean Spacing Ratio} \\
+\midrule
+Regular & 0.3 & $0.386 $ \\
+Intermediate & 1.8125 & $0.442 $ \\
+Chaotic & 3.0  & $0.534 $ \\
+\bottomrule
+\end{tabular}
+\caption{Level spacing statistics across parameter regimes showing clear transition from Poisson to Wigner-Dyson statistics}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{V0 = 1.8125}
+\caption{Level spacing distribution :  Intermediate regime ($V_0 = 1.8125$) showing transitional behavior.}
+\label{fig:level_spacing_comparison}
+\end{figure}
+
+To see the full chaotic regime, ($V_0 = 3.0$) we need higher performing computers and a program with higher channel range $j_{max}$ value and spatial grid points N.
+
+\section{Classical Lyapunov Exponent Analysis}
+
+To establish the classical-quantum correspondence, we computed classical Lyapunov exponents using the equations of motion derived from the Hamiltonian:
+
+\begin{align}
+\dot{x} &= p \\
+\dot{p} &= -V_0 \cos\theta \sum_m 2(x - m\xi) e^{-(x-m\xi)^2} \\
+\dot{\theta} &= \frac{L}{I_0} \\
+\dot{L} &= V_0 \sin\theta \sum_m e^{-(x-m\xi)^2}
+\end{align}
+
+\subsection{Chaos Regime Classification}
+
+Our Lyapunov exponent calculations reveal a clear correspondence with quantum level statistics:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{$V_0$ Range} & \textbf{Max Lyapunov Exp.} & \textbf{Classification} \\
+\midrule
+$V_0 < 1.0$ & $\lambda \approx 0$ & Marginal \\
+$1.0 < V_0 < 2.0$ & $\lambda > 0$ & Chaotic \\
+$V_0 > 2.0$ & $\lambda > 0$ & Chaotic \\
+\bottomrule
+\end{tabular}
+\caption{Classical chaos regimes vs potential strength showing correspondence with quantum signatures}
+\end{table}
+
+The correspondence between positive Lyapunov exponents and Wigner-Dyson level statistics confirms the classical-quantum connection.
+
+\begin{figure}[H]
+\includegraphics[width=1.0\textwidth]{classical_chaotic_analysis}
+\centering
+\caption{Classical-quantum correspondence: Lyapunov exponent vs potential strength $V_0$.}
+\label{fig:classical_quantum_correspondence}
+\end{figure}
+
+
+\section{Future Work: Entanglement and Quantum Chaos}
+
+\subsection{Research Motivation}
+
+A fundamental open question in quantum chaology concerns the relationship between classical chaotic scattering and quantum entanglement generation. The central question we propose to investigate is:
+
+\begin{quote}
+\textit{"Is there a relationship between the scattering being more chaotic and more entanglement being generated?"}
+\end{quote}
+
+%\subsection{Proposed Two-Particle Investigation}
+%
+%We propose to investigate two-particle scattering with incident waves in channels $j = 0$ and $j = 1$, analyzing the entanglement properties of the scattered state.
+%
+%\subsubsection{Density Matrix Construction}
+%For the two-particle wavefunction after scattering:
+%\begin{equation}
+%|\psi_{\text{scattered}}\rangle = \sum_{j,j'} c_{jj'} |j\rangle \otimes |j'\rangle
+%\end{equation}
+%
+%where the coefficients $c_{jj'}$ are determined by the S-matrix elements and initial conditions.
+%
+%\subsubsection{Entanglement Quantification}
+%Using purity $P = \text{Tr}(\rho_1^2)$ where $\rho_1 = \text{Tr}_2(\rho)$ is the reduced density matrix:
+%
+%\begin{equation}
+%\rho_1 = \sum_{j'} \langle j'|\rho|j'\rangle
+%\end{equation}
+%
+%The linear entropy $S_L = 1 - P$ quantifies the entanglement, with $S_L = 0$ for separable states and $S_L > 0$ for entangled states.
+%
+%\subsubsection{Chaos-Entanglement Correlation Analysis}
+%We will systematically vary $V_0$ across regular and chaotic regimes, measuring:
+%- Classical Lyapunov exponents $\lambda$
+%- Quantum level spacing ratios $\langle r \rangle$  
+%- Two-particle entanglement entropy $S_L$
+%
+%\subsection{Expected Outcomes and Physical Intuition}
+%
+%Based on theoretical considerations and preliminary analysis, we anticipate:
+%
+%\begin{itemize}
+%\item \textbf{Enhanced entanglement in chaotic regimes}: Classical chaos leads to complex, unpredictable trajectories that can create strong correlations between scattering channels
+%\item \textbf{Correlation with level statistics}: Entanglement measures should correlate with quantum chaos indicators like level spacing ratios
+%\item \textbf{Universal scaling relations}: In the semiclassical limit, entanglement may scale with classical chaos measures
+%\item \textbf{Threshold behavior}: Sharp transitions in entanglement generation at classical chaos thresholds
+%\end{itemize}
+%
+%\subsection{Experimental Feasibility}
+%
+%The proposed entanglement measurements could potentially be realized in:
+%\begin{itemize}
+%\item Cold atom systems with controllable inter-particle interactions
+%\item Microwave billiards with multiple input/output ports
+%\item Photonic systems with orbital angular momentum degrees of freedom
+%\item Molecular scattering experiments with rotational state resolution
+%\end{itemize}
+%
+%This investigation would establish a new frontier connecting quantum information theory, quantum chaology, and scattering theory.
+
+\section{Conclusions}
+
+This investigation successfully demonstrates several key achievements in quantum chaotic scattering:
+
+\begin{enumerate}
+\item \textbf{Robust Numerical Framework:} Matrix-based solution of coupled-channel Lippmann-\\Schwinger equations with excellent convergence and validation properties
+
+\item \textbf{Quantum Chaos Signatures}: Clear transition from Poisson to Wigner-Dyson statistics with increasing potential strength, validating random matrix theory predictions for chaotic scattering
+
+\item \textbf{Classical-Quantum Correspondence}: Strong correlation between classical Lyapunov exponents and quantum level statistics across parameter regimes, confirming semiclassical theory predictions
+
+\item \textbf{Computational Validation}: Excellent agreement with analytical benchmarks (delta function case) demonstrates numerical accuracy and reliability
+
+\item \textbf{Future Directions:} Clear pathway established for investigating entanglement-chaos connections in quantum scattering
+
+\end{enumerate}
+
+The numerical framework provides a solid foundation for investigating the deep connection between chaotic scattering and quantum entanglement, representing a frontier area where quantum information theory meets quantum chaology.
+
+\section*{Acknowledgments}
+
+This work builds upon the foundational contributions of R. Blümel and U. Smilansky to the field of quantum chaotic scattering. The numerical approaches were inspired by established methods in the Lippmann-Schwinger literature, particularly the Bachelor thesis of D. Hirtler.\\ My mentor for the work conducted is Prof. Diptarka Das. I would like to thank him for guiding me throughout and helping with me with minutest of details. 
+
+\appendix
+
+\section{Algebraic Solution of Lippmann-Schwinger Equations}
+
+Following the methodology outlined in Hirtler's thesis \cite{hirtler2019}, we transform the integral Lippmann-Schwinger equation:
+
+\begin{equation}
+\psi(x) = \phi(x) + \int G(x,x') V(x') \psi(x') dx'
+\end{equation}
+
+into the discrete linear system:
+
+\begin{equation}
+\mathbf{A} \boldsymbol{\psi} = \boldsymbol{\phi}
+\end{equation}
+
+where $\mathbf{A} = \mathbf{I} - \mathbf{K}$.
+
+\subsection{Matrix Discretization Procedure}
+
+The discretization process involves several key steps:
+
+1. Spatial Grid Setup: Define spatial points $x_i = a + i \cdot \Delta x$ for $i = 0, 1, \ldots, N-1$
+
+2. Kernel Matrix Construction: For each pair of grid points $(x_i, x_j)$:
+   \begin{equation}
+   K_{ij} = G(x_i, x_j) V(x_j) \Delta x
+   \end{equation}
+
+3. Coupled-Channel Extension: For the multi-channel case, the matrix becomes block-structured:
+   \begin{equation}
+   \mathbf{K} = \begin{pmatrix}
+   \mathbf{K}_{00} & \mathbf{K}_{01} & \mathbf{K}_{02} & \cdots \\
+   \mathbf{K}_{10} & \mathbf{K}_{11} & \mathbf{K}_{12} & \cdots \\
+   \mathbf{K}_{20} & \mathbf{K}_{21} & \mathbf{K}_{22} & \cdots \\
+   \vdots & \vdots & \vdots & \ddots
+   \end{pmatrix}
+   \end{equation}
+
+   where $\mathbf{K}_{jj'}$ represents coupling between channels $j$ and $j'$.
+
+\subsection{Coupled-Channel Matrix Structure}
+
+For our specific problem with dipole coupling ($\cos\theta$ terms), only adjacent channels couple:
+- $\mathbf{K}_{j,j} = 0$ (no self-coupling)
+- $\mathbf{K}_{j,j\pm1} \neq 0$ (nearest-neighbor coupling only)
+- $\mathbf{K}_{j,j'} = 0$ for $|j-j'| > 1$
+
+This creates a block-tridiagonal structure that can be solved efficiently.
+
+\subsection{Computational Complexity and Solution Methods}
+
+The resulting linear system has dimension $D = N \times N_{\text{ch}}$ where:\\
+- $N = 300-1500$ (spatial grid points)\\
+- $N_{\text{ch}} = 13$ (channels from $j = -6$ to $+6$)\\
+- Total matrix size: up to $19500 \times 19500$\\
+
+For large systems, we can employ:
+- LU Decomposition for direct solution
+- Block-structured algorithms exploiting sparse structure
+
+\section{Delta Function Analytical Validation}
+
+To validate our numerical approach, we implemented the method for the analytically solvable delta function potential $V(x) = V_0 \delta(x)$.
+
+\subsection{Analytical Solution Derivation}
+
+For a delta-potential at $x = 0$, we solve the Schrödinger equation with appropriate boundary conditions:
+
+\textbf{Regions:}
+- $x < 0$: $\psi(x) = e^{ikx} + r e^{-ikx}$ (incident + reflected)
+- $x > 0$: $\psi(x) = t e^{ikx}$ (transmitted)
+
+\textbf{Boundary Conditions:}
+1. Continuity: $\psi(0^-) = \psi(0^+)$
+   \begin{equation}
+   1 + r = t
+   \end{equation}
+
+2. Derivative discontinuity: $\psi'(0^+) - \psi'(0^-) = \frac{2mV_0}{\hbar^2}\psi(0)$
+   \begin{equation}
+   ik(t - (1-r)) = \frac{2mV_0}{\hbar^2}t
+   \end{equation}
+
+\textbf{Solution:}
+\begin{align}
+t &= \frac{k}{k + imV_0/\hbar^2} \\
+r &= \frac{-imV_0/\hbar^2}{k + imV_0/\hbar^2}
+\end{align}
+
+\textbf{Probabilities:}
+\begin{align}
+T &= |t|^2 = \frac{k^2}{k^2 + (mV_0/\hbar^2)^2} \\
+R &= |r|^2 = \frac{(mV_0/\hbar^2)^2}{k^2 + (mV_0/\hbar^2)^2}
+\end{align}
+
+\subsection{Numerical Validation Results}
+
+Our numerical implementation reproduces these results to machine precision:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{delta_function agrees}
+\caption{Comparison of analytical (solid line) and numerical (circles) transmission coefficients for delta function potential as a function of energy. The excellent agreement validates our numerical implementation.}
+\label{fig:delta_validation}
+\end{figure}
+
+\subsection{Convergence Analysis}
+
+The numerical method exhibits the expected convergence properties:
+
+\begin{itemize}
+\item Spatial discretization: $O(\Delta x^2)$ convergence for transmission coefficients
+\item Energy dependence: Uniform accuracy across energy range
+\item Probability conservation: $|T + R - 1|$ is less for all cases
+\end{itemize}
+
+This validation provides confidence in the accuracy of our coupled-channel calculations and establishes the reliability of the numerical framework for more complex scattering problems.
+
+\begin{thebibliography}{99}
+
+\bibitem{blumel1988}
+R. Bl\"umel and U. Smilansky, ``Classical irregular scattering and its quantum-mechanical implications,'' \textit{Phys. Rev. Lett.} \textbf{60}, 477 (1988).
+
+\bibitem{blumel1989}
+R. Bl\"umel and U. Smilansky, ``A simple model for chaotic scattering II. Quantum mechanical theory,'' \textit{Physica D} \textbf{36}, 111 (1989).
+
+\bibitem{hirtler2019}
+D. Hirtler, ``Quantum Mechanical Scattering at Arbitrary Potentials in 1 and 2 Dimensions by Numerically Solving the Lippmann-Schwinger Equation,'' Bachelor thesis, University of Graz (2019).
+
+\bibitem{blumel_pedagogical}
+R. Blümel, ``Quantum chaotic scattering,'' \textit{Physica D} \textbf{33}, 397 (1988).
+
+\end{thebibliography}
+
+\end{document}

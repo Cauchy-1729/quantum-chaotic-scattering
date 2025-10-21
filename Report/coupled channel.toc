@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Introduction and Theoretical Foundation}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Physical System and Hamiltonian Structure}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Theoretical Framework: Coupled-Channel Lippmann-\\Schwinger Equations}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Channel Decomposition}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Coupled-Channel Equations}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Channel Structure and Energy Quantization}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Lippmann-Schwinger Formulation}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Numerical Implementation}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Matrix Discretization Method}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Computational Parameters}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Kernel Matrix Construction}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}S-Matrix Construction and Analysis}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scattering Coefficient Extraction}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Multiple Incident Channel Analysis}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Multiple Incident Channel Analysis}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Quantum Chaos Indicators and Level Statistics}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Random Matrix Theory Predictions}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Numerical Results: Parameter Regime Analysis}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Classical Lyapunov Exponent Analysis}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Chaos Regime Classification}{9}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Future Work: Entanglement and Quantum Chaos}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Research Motivation}{10}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Conclusions}{10}{section.8}%
+\contentsline {section}{\numberline {A}Algebraic Solution of Lippmann-Schwinger Equations}{11}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Matrix Discretization Procedure}{11}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Coupled-Channel Matrix Structure}{12}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Computational Complexity and Solution Methods}{12}{subsection.A.3}%
+\contentsline {section}{\numberline {B}Delta Function Analytical Validation}{12}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Analytical Solution Derivation}{12}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Numerical Validation Results}{13}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Convergence Analysis}{13}{subsection.B.3}%

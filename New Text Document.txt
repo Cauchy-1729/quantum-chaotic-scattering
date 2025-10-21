@@ -1,0 +1,10 @@
+next  ask the two topics
+ask about paper.
+
+see video on the paper, read the two papers(classical one, short reading) and then learn about instantons and solitons. 
+
+learn matrix quantum mechanics 
+
+SDP paper/anomalous paper first then berenstein half reflection paper
+
+question : is bootstrap the only method rn to see non trivial s matrix and whether it has chaos
